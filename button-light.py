@@ -18,6 +18,7 @@ GPIO.output(23, GPIO.LOW)
 while True:
 	input_value = GPIO.input(24)
 	#print(input_value)
+	#button input is read as either 0 or 1, which reads as False or True
 	if (input_value == True):
 		# turn green light on
 		GPIO.output(25, GPIO.HIGH)
